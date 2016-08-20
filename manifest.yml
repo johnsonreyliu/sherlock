@@ -1,3 +1,4 @@
+---
 declared-services:
   dialog-service:
     label: dialog
@@ -5,7 +6,8 @@ declared-services:
 applications:
 - services:
   - dialog-service
-  name: dialog-tool
+  name: dialog-tool-johnsonliu-1140
   command: npm start
   path: .
   memory: 512M
+  host: dialog-tool-johnsonliu-1140
