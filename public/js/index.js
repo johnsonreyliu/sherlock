@@ -266,7 +266,7 @@ $(document).ready(function() {
    */
   var createDialogTemplate = function(dialog,index) {
     var $dialogTemplate = $('.dialog-template').last().clone();
-
+    console.log("create dialog");
     // save the index
     $dialogTemplate.attr('data-index',index);
 
@@ -318,6 +318,7 @@ $(document).ready(function() {
     var self = this;
     $('.dialog-selection').animate({height : '100%'}, 0, function() {
       $('.dialog-selection').show();
+      console.log("show dialog");
       $(self).hide();
     });
   });
